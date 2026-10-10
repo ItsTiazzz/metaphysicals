@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "metaphysicals",
+	"version": "${version}",
+	"name": "Mylthorne's Metaphysicals",
+	"description": "Whymsical witches.",
+	"authors": [
+		"ItsTiazzz"
+	],
+	"contact": {
+		"sources": "https://github.com/ItsTiazzz/metaphysicals"
+	},
+	"license": "TYSPAL-3.0",
+	"icon": "assets/metaphysicals/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "me.tiazzz.metaphysicals.Metaphysicals",
+				"adapter": "kotlin"
+			}
+		],
+		"fabric-datagen": [
+			{
+				"value": "me.tiazzz.metaphysicals.util.datagen.MetaphysicalsDataGenerator",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"metaphysicals.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
+	}
+}
